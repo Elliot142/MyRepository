@@ -21,6 +21,10 @@ public class Cylinder extends Circle{
     public void setHeight(double height) {
         this.height = height;
     }
+    public double getArea(){
+       return (2*super.getArea() + 2*PI*super.getRadius()*this.height);
+    }
+    
     public double getVolume(){
         return getArea()*this.height;
     }
